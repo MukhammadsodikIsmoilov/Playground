@@ -85,3 +85,77 @@ button{
     outline: none;
     cursor: pointer;
 }
+
+.post_wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #999;
+    padding: 10px 30px;
+}
+
+.post_wrapper .input_field:nth-child(2){
+    margin: 0 20px;
+}
+
+.post_wrapper input{
+    padding: 3px 5px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none;
+}
+
+.user_wrapper{
+    width: 400px;
+    height: 150px;
+    padding: 0 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+
+.user_img img{
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.user_desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title p{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 10px;
+}
+
+.wrapper{
+    padding: 20px 10px;
+}
+
+.users{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pagination{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

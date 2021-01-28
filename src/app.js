@@ -7,7 +7,7 @@ import Posts from "./pages/News";
 import LocalStorage from "./pages/LocalStorage";
 import About from "./pages/About";
 import Animation from "./pages/Animation";
-import Users from "./components/users";
+import Users from "./pages/Users";
 
 const App = () => (
   <Router>
