@@ -1,0 +1,10 @@
+.wrapper{
+    padding: 20px 10px;
+}
+
+.users{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

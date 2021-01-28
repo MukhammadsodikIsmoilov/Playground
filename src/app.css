@@ -1,0 +1,87 @@
+
+html body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul{
+    text-align: center;
+}
+
+li{
+    display: inline;
+    margin-left: 2rem;
+}
+
+li a{
+    color: #777;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+li a:hover{
+    border-bottom: 1px solid #777;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.localStorage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.localStorage h2{
+    color: #777;
+    letter-spacing: 0.3px;
+}
+
+.localStorage input{
+    width: 30%;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+
+.posts{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.posts button{
+    display: flex;
+    justify-content: center;
+}
+
+.post{
+    padding: 10px;
+    border: 1px solid #888;
+    cursor: pointer;
+}
+
+button{
+    margin: 10px;
+    padding: 10px 25px;
+    background-color: #348904;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+.user_wrapper{
+    width: 400px;
+    height: 150px;
+    padding: 0 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+
+.user_img img{
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+}
+
+.user_desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title p{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 10px;
+}
