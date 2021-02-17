@@ -1,7 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
+import {useAuth} from '../context/auth'
 
 const Navbar = () => {
+  const {signout} = useAuth()
+  const history = useHistory()
+  const handleClick = () => {
+    signout()
+    return history.push('/sign-in')
+  }
   return (
     <header>
       <ul>
@@ -22,6 +29,9 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink to="/about">About</NavLink>
+        </li>
+        <li>
+          <button onClick={handleClick}>Sign out</button>
         </li>
       </ul>
     </header>
