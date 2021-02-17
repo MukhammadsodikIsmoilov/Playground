@@ -1,10 +1,14 @@
-import React from "react";
+import { Fragment } from "react";
 import CreateUser from "../components/newUser";
+import Navbar from "../components/Navbar";
 
 const HomePage = () => (
-  <div className="homepage">
-    <CreateUser />
-  </div>
+  <Fragment>
+    <Navbar />
+    <div className="homepage_body">
+      <CreateUser />
+    </div>
+  </Fragment>
 );
 
 export default HomePage;

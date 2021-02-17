@@ -1,10 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import Navbar from "../components/Navbar";
 const About = () => (
-    <>
-        <h1>React Hooks</h1>
-        <p>Version: 0.0.1</p>
-    </>
-)
+  <>
+    <Navbar />
+    <h1>React Hooks</h1>
+    <p>Version: 0.0.1</p>
+  </>
+);
 
-export default About
+export default About;
