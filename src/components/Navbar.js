@@ -1,14 +1,17 @@
 import React from "react";
 import { NavLink, useHistory } from "react-router-dom";
-import {useAuth} from '../context/auth'
+import Cookies from 'js-cookie'
+import { useAuth } from "../context/auth";
 
 const Navbar = () => {
-  const {signout} = useAuth()
-  const history = useHistory()
+  const { signout } = useAuth();
+  const history = useHistory();
   const handleClick = () => {
-    signout()
-    return history.push('/sign-in')
-  }
+    signout();
+    Cookies.remove('user')
+    console.log('The user has been logged out')
+    return history.push("/sign-in");
+  };
   return (
     <header>
       <ul>
@@ -23,6 +26,9 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink to="/localstorage">LocalStorage</NavLink>
+        </li>
+        <li>
+          <NavLink to="/color">Color</NavLink>
         </li>
         <li>
           <NavLink to="/users">Users</NavLink>

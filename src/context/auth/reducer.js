@@ -1,22 +1,29 @@
 import { SIGN_OUT, SIGN_IN } from "./types";
 
-export const authRedcuer = (state, action) => {
+export const initialState = {
+  users: [
+    {
+      id: 1,
+      name: "Curious",
+      email: "curious.media.forfun@gmail.com",
+      password: "123456",
+    },
+  ],
+  currentUser: null,
+};
+
+export const authRedcuer = (state = initialState, action) => {
   switch (action.type) {
     case SIGN_IN:
+      const user = state.users.find((user) => user.id === action.payload);
       return {
         ...state,
-        user: {
-          ...state.user,
-          is_authenticated: true,
-        },
+        currentUser: user,
       };
     case SIGN_OUT:
       return {
         ...state,
-        user: {
-          ...state.user,
-          is_authenticated: false,
-        },
+        currentUser: null,
       };
     default:
       return state;
